@@ -8,28 +8,28 @@
     <title>Document</title>
 </head>
 <body class="container">
-    <h1 class="text-center m-3">Local Storage</h1>
+    <h1 class="text-center m-3">Add Data On Your Local Storage</h1>
     <div class="w-100 bg-light rounded p-3 mb-4">
         <div class="d-flex mb-4">
-            <input type="text" class="form-control w-50 p-2 me-2" id="InputFieldName" placeholder="Enter a Name">
-            <button class="w-25 btn btn btn-success me-2">Add Name</button>
-            <button class="w-25 btn btn-warning">Delete Name</button>
+            <input type="text" class="form-control w-50 p-2 me-2" id="inputFieldName" placeholder="Enter a Name">
+            <button onclick="getName()" id="addNameBtn" class="w-25 btn btn btn-success me-2">Add Name</button>
+            <button id="dltNameBtn" class="w-25 btn btn-warning">Delete Name</button>
         </div>
         <div class="d-flex mb-4">
-            <input type="text" class="form-control w-50 p-2 me-2" id="InputFieldEmail" placeholder="Enter a Email">
-            <button class="w-25 btn btn btn-success me-2">Add Name</button>
-            <button class="w-25 btn btn-warning">Delete Name</button>
+            <input type="text" class="form-control w-50 p-2 me-2" id="inputFieldEmail" placeholder="Enter a Email">
+            <button onclick="getEmail()" id="addEmailBtn" class="w-25 btn btn btn-success me-2">Add Email</button>
+            <button id="dltEmailBtn" class="w-25 btn btn-warning">Delete Name</button>
         </div>
         <div class="d-flex">
-            <input type="text" class="form-control w-50 p-2 me-2" id="InputFieldMessage" placeholder="Enter a Meaage">
-            <button class="w-25 btn btn btn-success me-2">Add Name</button>
-            <button class="w-25 btn btn-warning">Delete Name</button>
+            <input type="text" class="form-control w-50 p-2 me-2" id="inputFieldMessage" placeholder="Enter a Meaage">
+            <button onclick="getMessage()" id="addMeaageBtn" class="w-25 btn btn btn-success me-2">Add Message</button>
+            <button id="dltMessageBtn" class="w-25 btn btn-warning">Delete Name</button>
         </div>    
     </div>
     <div class="w-100 bg-light rounded p-3">
         <div class="d-flex">
-            <button class="w-50 btn btn btn-success me-2">Send</button>
-            <button class="w-50 btn btn-danger">Reset</button>
+            <button id="sendBtn" class="w-50 btn btn btn-success me-2">Send</button>
+            <button onclick="resetEverything()" id="resetBtn" class="w-50 btn btn-danger">Reset</button>
         </div>
     </div>
 
